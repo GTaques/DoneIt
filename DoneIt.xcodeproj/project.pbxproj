@@ -13,6 +13,18 @@
 		2919578A240D37A600564020 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 29195789240D37A600564020 /* Assets.xcassets */; };
 		2919578D240D37A600564020 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2919578C240D37A600564020 /* Preview Assets.xcassets */; };
 		29195790240D37A600564020 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2919578E240D37A600564020 /* LaunchScreen.storyboard */; };
+		2919579A240D387600564020 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29195799240D387600564020 /* HomeView.swift */; };
+		2919579C240D389600564020 /* TaskListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2919579B240D389600564020 /* TaskListView.swift */; };
+		2919579E240D38B500564020 /* TaskItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2919579D240D38B500564020 /* TaskItem.swift */; };
+		291957A0240D3A5F00564020 /* TaskList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2919579F240D3A5F00564020 /* TaskList.swift */; };
+		291957A4240D3AED00564020 /* Priority.swift in Sources */ = {isa = PBXBuildFile; fileRef = 291957A3240D3AED00564020 /* Priority.swift */; };
+		291957A6240D3AFB00564020 /* RepeatAt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 291957A5240D3AFB00564020 /* RepeatAt.swift */; };
+		298FB8982419999B007F7624 /* HomeGadgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 298FB8972419999B007F7624 /* HomeGadgetView.swift */; };
+		298FB89B24199A97007F7624 /* HomeListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 298FB89A24199A97007F7624 /* HomeListItemView.swift */; };
+		298FB89D24199BE4007F7624 /* HomeListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 298FB89C24199BE4007F7624 /* HomeListView.swift */; };
+		298FB8A024199D4E007F7624 /* GadgetItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 298FB89F24199D4E007F7624 /* GadgetItemView.swift */; };
+		298FB8A2241A5951007F7624 /* TodayListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 298FB8A1241A5951007F7624 /* TodayListView.swift */; };
+		298FB8A4241A5B14007F7624 /* Colorful.swift in Sources */ = {isa = PBXBuildFile; fileRef = 298FB8A3241A5B14007F7624 /* Colorful.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +36,18 @@
 		2919578C240D37A600564020 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		2919578F240D37A600564020 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		29195791240D37A600564020 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		29195799240D387600564020 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		2919579B240D389600564020 /* TaskListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListView.swift; sourceTree = "<group>"; };
+		2919579D240D38B500564020 /* TaskItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskItem.swift; sourceTree = "<group>"; };
+		2919579F240D3A5F00564020 /* TaskList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskList.swift; sourceTree = "<group>"; };
+		291957A3240D3AED00564020 /* Priority.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Priority.swift; sourceTree = "<group>"; };
+		291957A5240D3AFB00564020 /* RepeatAt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepeatAt.swift; sourceTree = "<group>"; };
+		298FB8972419999B007F7624 /* HomeGadgetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeGadgetView.swift; sourceTree = "<group>"; };
+		298FB89A24199A97007F7624 /* HomeListItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeListItemView.swift; sourceTree = "<group>"; };
+		298FB89C24199BE4007F7624 /* HomeListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeListView.swift; sourceTree = "<group>"; };
+		298FB89F24199D4E007F7624 /* GadgetItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GadgetItemView.swift; sourceTree = "<group>"; };
+		298FB8A1241A5951007F7624 /* TodayListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayListView.swift; sourceTree = "<group>"; };
+		298FB8A3241A5B14007F7624 /* Colorful.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colorful.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +80,9 @@
 		29195782240D37A200564020 /* DoneIt */ = {
 			isa = PBXGroup;
 			children = (
+				291957A1240D3AD500564020 /* Utils */,
+				29195798240D384200564020 /* View */,
+				29195797240D383500564020 /* Model */,
 				29195783240D37A200564020 /* AppDelegate.swift */,
 				29195785240D37A200564020 /* SceneDelegate.swift */,
 				29195787240D37A200564020 /* ContentView.swift */,
@@ -73,6 +100,63 @@
 				2919578C240D37A600564020 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		29195797240D383500564020 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2919579D240D38B500564020 /* TaskItem.swift */,
+				2919579F240D3A5F00564020 /* TaskList.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		29195798240D384200564020 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				298FB89924199A71007F7624 /* Home */,
+				2919579B240D389600564020 /* TaskListView.swift */,
+				298FB8A1241A5951007F7624 /* TodayListView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		291957A1240D3AD500564020 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				291957A2240D3AE200564020 /* Enums */,
+				298FB8A3241A5B14007F7624 /* Colorful.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		291957A2240D3AE200564020 /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				291957A3240D3AED00564020 /* Priority.swift */,
+				291957A5240D3AFB00564020 /* RepeatAt.swift */,
+			);
+			path = Enums;
+			sourceTree = "<group>";
+		};
+		298FB89924199A71007F7624 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				298FB89E24199D33007F7624 /* Gadget */,
+				29195799240D387600564020 /* HomeView.swift */,
+				298FB89A24199A97007F7624 /* HomeListItemView.swift */,
+				298FB89C24199BE4007F7624 /* HomeListView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		298FB89E24199D33007F7624 /* Gadget */ = {
+			isa = PBXGroup;
+			children = (
+				298FB8972419999B007F7624 /* HomeGadgetView.swift */,
+				298FB89F24199D4E007F7624 /* GadgetItemView.swift */,
+			);
+			path = Gadget;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -147,7 +231,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				29195784240D37A200564020 /* AppDelegate.swift in Sources */,
+				298FB89B24199A97007F7624 /* HomeListItemView.swift in Sources */,
+				2919579A240D387600564020 /* HomeView.swift in Sources */,
+				291957A0240D3A5F00564020 /* TaskList.swift in Sources */,
+				298FB8982419999B007F7624 /* HomeGadgetView.swift in Sources */,
+				291957A4240D3AED00564020 /* Priority.swift in Sources */,
+				291957A6240D3AFB00564020 /* RepeatAt.swift in Sources */,
+				2919579C240D389600564020 /* TaskListView.swift in Sources */,
 				29195786240D37A200564020 /* SceneDelegate.swift in Sources */,
+				298FB89D24199BE4007F7624 /* HomeListView.swift in Sources */,
+				298FB8A024199D4E007F7624 /* GadgetItemView.swift in Sources */,
+				2919579E240D38B500564020 /* TaskItem.swift in Sources */,
+				298FB8A2241A5951007F7624 /* TodayListView.swift in Sources */,
+				298FB8A4241A5B14007F7624 /* Colorful.swift in Sources */,
 				29195788240D37A200564020 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
