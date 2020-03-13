@@ -30,21 +30,14 @@ struct HomeView: View {
                         }
                         .padding()
                     }
-                    
-                    
-                    
                 }
             }
             .navigationBarItems(trailing: Button(action: {
-                
-                }) {
-                   Text("Edit")
+            }) {
+                Text("Edit")
             })
                 .padding(.horizontal)
-                .background(Color.lightGray)
-                
         }
-        
     }
 }
 

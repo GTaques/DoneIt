@@ -21,6 +21,8 @@ struct TaskItem: Identifiable {
     var remindTime: Date?
     var repeatAt: RepeatAt?
     
+    var completed: Bool
+    
     //Implement Later
     var remindMeLocation: Bool
     var location: String?

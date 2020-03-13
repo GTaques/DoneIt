@@ -25,6 +25,8 @@
 		298FB8A024199D4E007F7624 /* GadgetItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 298FB89F24199D4E007F7624 /* GadgetItemView.swift */; };
 		298FB8A2241A5951007F7624 /* TodayListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 298FB8A1241A5951007F7624 /* TodayListView.swift */; };
 		298FB8A4241A5B14007F7624 /* Colorful.swift in Sources */ = {isa = PBXBuildFile; fileRef = 298FB8A3241A5B14007F7624 /* Colorful.swift */; };
+		298FB8B8241B158B007F7624 /* TaskListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 298FB8B7241B158B007F7624 /* TaskListItemView.swift */; };
+		298FB8BA241B1963007F7624 /* Singleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 298FB8B9241B1963007F7624 /* Singleton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +50,8 @@
 		298FB89F24199D4E007F7624 /* GadgetItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GadgetItemView.swift; sourceTree = "<group>"; };
 		298FB8A1241A5951007F7624 /* TodayListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayListView.swift; sourceTree = "<group>"; };
 		298FB8A3241A5B14007F7624 /* Colorful.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colorful.swift; sourceTree = "<group>"; };
+		298FB8B7241B158B007F7624 /* TaskListItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListItemView.swift; sourceTree = "<group>"; };
+		298FB8B9241B1963007F7624 /* Singleton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Singleton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,9 +89,7 @@
 				29195797240D383500564020 /* Model */,
 				29195783240D37A200564020 /* AppDelegate.swift */,
 				29195785240D37A200564020 /* SceneDelegate.swift */,
-				29195787240D37A200564020 /* ContentView.swift */,
 				29195789240D37A600564020 /* Assets.xcassets */,
-				2919578E240D37A600564020 /* LaunchScreen.storyboard */,
 				29195791240D37A600564020 /* Info.plist */,
 				2919578B240D37A600564020 /* Preview Content */,
 			);
@@ -114,9 +116,10 @@
 		29195798240D384200564020 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				298FB8B6241B1563007F7624 /* Lists */,
 				298FB89924199A71007F7624 /* Home */,
-				2919579B240D389600564020 /* TaskListView.swift */,
-				298FB8A1241A5951007F7624 /* TodayListView.swift */,
+				2919578E240D37A600564020 /* LaunchScreen.storyboard */,
+				29195787240D37A200564020 /* ContentView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -126,6 +129,7 @@
 			children = (
 				291957A2240D3AE200564020 /* Enums */,
 				298FB8A3241A5B14007F7624 /* Colorful.swift */,
+				298FB8B9241B1963007F7624 /* Singleton.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -157,6 +161,16 @@
 				298FB89F24199D4E007F7624 /* GadgetItemView.swift */,
 			);
 			path = Gadget;
+			sourceTree = "<group>";
+		};
+		298FB8B6241B1563007F7624 /* Lists */ = {
+			isa = PBXGroup;
+			children = (
+				2919579B240D389600564020 /* TaskListView.swift */,
+				298FB8B7241B158B007F7624 /* TaskListItemView.swift */,
+				298FB8A1241A5951007F7624 /* TodayListView.swift */,
+			);
+			path = Lists;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -240,10 +254,12 @@
 				2919579C240D389600564020 /* TaskListView.swift in Sources */,
 				29195786240D37A200564020 /* SceneDelegate.swift in Sources */,
 				298FB89D24199BE4007F7624 /* HomeListView.swift in Sources */,
+				298FB8B8241B158B007F7624 /* TaskListItemView.swift in Sources */,
 				298FB8A024199D4E007F7624 /* GadgetItemView.swift in Sources */,
 				2919579E240D38B500564020 /* TaskItem.swift in Sources */,
 				298FB8A2241A5951007F7624 /* TodayListView.swift in Sources */,
 				298FB8A4241A5B14007F7624 /* Colorful.swift in Sources */,
+				298FB8BA241B1963007F7624 /* Singleton.swift in Sources */,
 				29195788240D37A200564020 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

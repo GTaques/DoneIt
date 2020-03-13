@@ -10,26 +10,18 @@ import SwiftUI
 
 struct HomeListView: View {
     
-    var taskLists: [TaskList] = [
-        TaskList(name: "Work", tasks: [
-            TaskItem(title: "", remindMeOnDay: true, remindMeLocation: false, flagged: false),
-            TaskItem(title: "", remindMeOnDay: true, remindMeLocation: false, flagged: false)
-        ]),
-        TaskList(name: "Family", tasks: [
-            TaskItem(title: "", remindMeOnDay: true, remindMeLocation: false, flagged: false),
-            TaskItem(title: "", remindMeOnDay: true, remindMeLocation: false, flagged: false)
-        ])
-    ]
+    var taskLists = Singleton.shared.taskLists
     
     var body: some View {
         List(self.taskLists) { taskList in
-       
+            
             //https://www.hackingwithswift.com/quick-start/swiftui/building-a-menu-using-list
-            NavigationLink(destination: TaskListView(listTitle: taskList.name)) {
+            NavigationLink(destination: TaskListView(selectedList: taskList, listTitle: taskList.name)) {
                 HomeListItemView(listName: taskList.name)
             }
         }
-    .cornerRadius(12)
+        .cornerRadius(12)
+        .border(Color.lightGray, width: 2)
     }
 }
 

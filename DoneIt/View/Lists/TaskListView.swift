@@ -9,15 +9,20 @@
 import SwiftUI
 
 struct TaskListView: View {
+    
+    @State var selectedList: TaskList
+    
     var listTitle: String
     
     var body: some View {
         VStack(alignment: .leading) {
-            List {
-                Text("")
+            List(self.selectedList.tasks) { task in
+                //Currently it displays all tasks
+                //Implement filter by 'Completed' later
+                TaskListItemView(itemStatus: task.completed, task: task)
             }
             Button(action: {
-                
+                //Display an ActionSheet
             }) {
                 HStack {
                     Image(systemName: "plus.circle.fill")
@@ -41,9 +46,11 @@ struct TaskListView: View {
     }
 }
 
-struct TaskListView_Previews: PreviewProvider {
-    
-    static var previews: some View {
-        TaskListView(listTitle: "Some cool title")
-    }
-}
+//struct TaskListView_Previews: PreviewProvider {
+//
+//    @Binding var taskList: TaskList
+//
+//    static var previews: some View {
+//        TaskListView(selectedList: taskList, listTitle: "Some cool title")
+//    }
+//}

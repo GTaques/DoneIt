@@ -16,17 +16,17 @@ struct HomeGadgetView: View {
                 HStack(spacing: 15) {
                     NavigationLink(destination: TodayListView()) {
                         GadgetItemView()
-                        .cornerRadius(10)
+                        .cornerRadius(12)
                     }
                     
                     GadgetItemView()
-                        .cornerRadius(10)
+                        .cornerRadius(12)
                 }
                 HStack(spacing: 15) {
                     GadgetItemView()
-                        .cornerRadius(10)
+                        .cornerRadius(12)
                     GadgetItemView()
-                        .cornerRadius(10)
+                        .cornerRadius(12)
                 }
             }
         }
