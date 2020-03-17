@@ -18,6 +18,7 @@ struct TaskListItemView: View {
             Image(systemName: itemStatus ? "largecircle.fill.circle" : "circle")
                 .resizable()
                 .frame(width: 24, height: 24, alignment: .leading)
+                .foregroundColor(.coral)
                 .onTapGesture {
                     self.toggleItemStatus()
             }

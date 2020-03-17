@@ -9,6 +9,10 @@
 import SwiftUI
 
 struct GadgetItemView: View {
+    
+    var itemTitle: String
+    var iconColor: Color
+    
     var body: some View {
         GeometryReader { geometry in
             Button(action: {
@@ -19,21 +23,23 @@ struct GadgetItemView: View {
                             Image(systemName: "pencil.circle.fill")
                             .resizable()
                                 .frame(width: 28, height: 28, alignment: .center)
+                                .foregroundColor(self.iconColor)
                             Spacer()
-                            Text("Today")
+                            Text(self.itemTitle)
                                 .foregroundColor(.gray)
                                 .font(.subheadline)
                                 .bold()
                         }
                         Spacer()
                         Text("1")
+                            .foregroundColor(.black)
                             .font(.title)
                             .bold()
                     }
             }
             .padding()
             .frame(height: geometry.size.height, alignment: .center)
-            .background(Color.black)
+            .background(Color.white)
         }
         
         
@@ -42,6 +48,6 @@ struct GadgetItemView: View {
 
 struct GadgetItemView_Previews: PreviewProvider {
     static var previews: some View {
-        GadgetItemView()
+        GadgetItemView(itemTitle: "Today", iconColor: .red)
     }
 }

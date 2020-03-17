@@ -19,6 +19,8 @@
 		291957A0240D3A5F00564020 /* TaskList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2919579F240D3A5F00564020 /* TaskList.swift */; };
 		291957A4240D3AED00564020 /* Priority.swift in Sources */ = {isa = PBXBuildFile; fileRef = 291957A3240D3AED00564020 /* Priority.swift */; };
 		291957A6240D3AFB00564020 /* RepeatAt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 291957A5240D3AFB00564020 /* RepeatAt.swift */; };
+		2977B02C242029BA00FA6D74 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2977B02B242029BA00FA6D74 /* SearchBar.swift */; };
+		2977B02E242051C500FA6D74 /* TaskFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2977B02D242051C500FA6D74 /* TaskFormView.swift */; };
 		298FB8982419999B007F7624 /* HomeGadgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 298FB8972419999B007F7624 /* HomeGadgetView.swift */; };
 		298FB89B24199A97007F7624 /* HomeListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 298FB89A24199A97007F7624 /* HomeListItemView.swift */; };
 		298FB89D24199BE4007F7624 /* HomeListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 298FB89C24199BE4007F7624 /* HomeListView.swift */; };
@@ -44,6 +46,8 @@
 		2919579F240D3A5F00564020 /* TaskList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskList.swift; sourceTree = "<group>"; };
 		291957A3240D3AED00564020 /* Priority.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Priority.swift; sourceTree = "<group>"; };
 		291957A5240D3AFB00564020 /* RepeatAt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepeatAt.swift; sourceTree = "<group>"; };
+		2977B02B242029BA00FA6D74 /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
+		2977B02D242051C500FA6D74 /* TaskFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskFormView.swift; sourceTree = "<group>"; };
 		298FB8972419999B007F7624 /* HomeGadgetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeGadgetView.swift; sourceTree = "<group>"; };
 		298FB89A24199A97007F7624 /* HomeListItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeListItemView.swift; sourceTree = "<group>"; };
 		298FB89C24199BE4007F7624 /* HomeListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeListView.swift; sourceTree = "<group>"; };
@@ -84,6 +88,7 @@
 		29195782240D37A200564020 /* DoneIt */ = {
 			isa = PBXGroup;
 			children = (
+				2977B02A242029A900FA6D74 /* UIKit */,
 				291957A1240D3AD500564020 /* Utils */,
 				29195798240D384200564020 /* View */,
 				29195797240D383500564020 /* Model */,
@@ -116,7 +121,7 @@
 		29195798240D384200564020 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				298FB8B6241B1563007F7624 /* Lists */,
+				298FB8B6241B1563007F7624 /* Task */,
 				298FB89924199A71007F7624 /* Home */,
 				2919578E240D37A600564020 /* LaunchScreen.storyboard */,
 				29195787240D37A200564020 /* ContentView.swift */,
@@ -143,6 +148,14 @@
 			path = Enums;
 			sourceTree = "<group>";
 		};
+		2977B02A242029A900FA6D74 /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				2977B02B242029BA00FA6D74 /* SearchBar.swift */,
+			);
+			path = UIKit;
+			sourceTree = "<group>";
+		};
 		298FB89924199A71007F7624 /* Home */ = {
 			isa = PBXGroup;
 			children = (
@@ -163,14 +176,15 @@
 			path = Gadget;
 			sourceTree = "<group>";
 		};
-		298FB8B6241B1563007F7624 /* Lists */ = {
+		298FB8B6241B1563007F7624 /* Task */ = {
 			isa = PBXGroup;
 			children = (
 				2919579B240D389600564020 /* TaskListView.swift */,
 				298FB8B7241B158B007F7624 /* TaskListItemView.swift */,
 				298FB8A1241A5951007F7624 /* TodayListView.swift */,
+				2977B02D242051C500FA6D74 /* TaskFormView.swift */,
 			);
-			path = Lists;
+			path = Task;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -246,9 +260,11 @@
 			files = (
 				29195784240D37A200564020 /* AppDelegate.swift in Sources */,
 				298FB89B24199A97007F7624 /* HomeListItemView.swift in Sources */,
+				2977B02E242051C500FA6D74 /* TaskFormView.swift in Sources */,
 				2919579A240D387600564020 /* HomeView.swift in Sources */,
 				291957A0240D3A5F00564020 /* TaskList.swift in Sources */,
 				298FB8982419999B007F7624 /* HomeGadgetView.swift in Sources */,
+				2977B02C242029BA00FA6D74 /* SearchBar.swift in Sources */,
 				291957A4240D3AED00564020 /* Priority.swift in Sources */,
 				291957A6240D3AFB00564020 /* RepeatAt.swift in Sources */,
 				2919579C240D389600564020 /* TaskListView.swift in Sources */,

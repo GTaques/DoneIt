@@ -15,20 +15,21 @@ struct HomeGadgetView: View {
             VStack(alignment: .center, spacing: 15) {
                 HStack(spacing: 15) {
                     NavigationLink(destination: TodayListView()) {
-                        GadgetItemView()
+                        GadgetItemView(itemTitle: "Today", iconColor: .blue)
                         .cornerRadius(12)
                     }
                     
-                    GadgetItemView()
+                    GadgetItemView(itemTitle: "Scheduled", iconColor: .orange)
                         .cornerRadius(12)
                 }
                 HStack(spacing: 15) {
-                    GadgetItemView()
+                    GadgetItemView(itemTitle: "All", iconColor: .gray)
                         .cornerRadius(12)
-                    GadgetItemView()
+                    GadgetItemView(itemTitle: "Flagged", iconColor: .orangeRed)
                         .cornerRadius(12)
                 }
             }
+            .padding(.horizontal)
         }
         
     }

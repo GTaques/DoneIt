@@ -10,23 +10,39 @@ import SwiftUI
 
 struct HomeListView: View {
     
+    @State var homePageTitle: String = "My Lists"
+    @Binding var displayMode: NavigationBarItem.TitleDisplayMode
     var taskLists = Singleton.shared.taskLists
     
     var body: some View {
-        List(self.taskLists) { taskList in
-            
-            //https://www.hackingwithswift.com/quick-start/swiftui/building-a-menu-using-list
-            NavigationLink(destination: TaskListView(selectedList: taskList, listTitle: taskList.name)) {
-                HomeListItemView(listName: taskList.name)
+        VStack(alignment: .leading) {
+            Text("My Lists")
+                .font(.title)
+                .bold()
+            List(self.taskLists) { taskList in
+                //https://www.hackingwithswift.com/quick-start/swiftui/building-a-menu-using-list
+                NavigationLink(destination: TaskListView(selectedList: taskList, displayMode: self.$displayMode, listTitle: taskList.name)) {
+                    HomeListItemView(listName: taskList.name)
+                }
+            }
+            .cornerRadius(12)
+            HStack {
+                Spacer()
+                Button(action: {
+                    print("Open sheet")
+                }) {
+                    Text("Add List")
+                }
+                .padding()
             }
         }
-        .cornerRadius(12)
-        .border(Color.lightGray, width: 2)
+        .padding()
+        
     }
 }
 
-struct HomeListView_Previews: PreviewProvider {
-    static var previews: some View {
-        HomeListView()
-    }
-}
+//struct HomeListView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        HomeListView()
+//    }
+//}

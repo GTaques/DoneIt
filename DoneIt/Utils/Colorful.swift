@@ -145,4 +145,5 @@ public extension Color {
     static let wheat = Color(hex: 0xf5deb3)
     static let whiteSmoke = Color(hex: 0xf5f5f5)
     static let yellowGreen = Color(hex: 0x9acd32)
+    static let systemLightGray = Color(hex: 0xf2f2f7)
 }
